@@ -11,7 +11,7 @@ body {
 #app {
   max-width: 480px;
   min-height: 120vh;
-  margin:auto;
+  margin: auto;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -23,141 +23,142 @@ body {
 
 
 
-.Logo{
-align-items: center;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 900;
-font-size: 40px;
-line-height: 48px;
-color: #5E94FF;
-margin-bottom: 40px;
-text-align: center;
+.Logo {
+  align-items: center;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  color: #5E94FF;
+  margin-bottom: 40px;
+  text-align: center;
 }
 
-.whatAboutThisCafe{
+.whatAboutThisCafe {
   /* 이런 카페는 어떠세요? */
-position: relative;
-white-space: nowrap;
-height: 22px;
-left: 41px;
-top: 90px;
+  position: relative;
+  white-space: nowrap;
+  height: 22px;
+  left: 41px;
+  top: 90px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 18px;
-line-height: 22px;
-/* identical to box height */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
 
-color: #000000;
-text-align: left;  /* 왼쪽 정렬 추가 */
-width: 100%;
+  color: #000000;
+  text-align: left;
+  /* 왼쪽 정렬 추가 */
+  width: 100%;
 }
 
-.grayLine{
+.grayLine {
   /* underline */
 
-position: relative;
-width: 420px;
-height: 0px;
-left: 30px;
-top: 150px;
-margin-top: -50px;
+  position: relative;
+  width: 420px;
+  height: 0px;
+  left: 30px;
+  top: 150px;
+  margin-top: -50px;
 
-border: 1px solid #d7d7d7;
+  border: 1px solid #d7d7d7;
 
 
 
 }
 
-.picture{
+.picture {
   /* cafe image */
-position: relative;
-width: 100px;
-height: 100px;
-left: -150px;
-top: 160px;
-margin-bottom: -10px;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  left: -150px;
+  top: 160px;
+  margin-bottom: -10px;
 
-/* background: url(image.png); */
-border-radius: 6px;
+  /* background: url(image.png); */
+  border-radius: 6px;
 
 }
 
-.cafeName{
+.cafeName {
   /* 스타벅스 경희대학교국제캠... */
-white-space: nowrap;
-text-align: left;
-position: relative;
-width: 195px;
-height: 19px;
-left: 155px;
-top: 60px;
+  white-space: nowrap;
+  text-align: left;
+  position: relative;
+  width: 195px;
+  height: 19px;
+  left: 155px;
+  top: 60px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 16px;
-line-height: 19px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
 
-color: #000000;
+  color: #000000;
 
 
 }
 
-.americanoCost{
+.americanoCost {
   /* 아메리카노 4,900원 */
 
-position: relative;
-text-align: left;
-width: 122px;
-height: 17px;
-left: 155px;
-top: 65px;
+  position: relative;
+  text-align: left;
+  width: 122px;
+  height: 17px;
+  left: 155px;
+  top: 65px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 17px;
-/* identical to box height */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
 
-color: #000000;
+  color: #000000;
 
 
 
 }
 
-.characteristic{
+.characteristic {
   /* 도보 약 12분, 콘센트 많음, 이용 고객 많음, 시끄러운 분위기 */
 
-position: relative;
-width: 239px;
-height: 34px;
-left: 155px;
-top: 70px;
+  position: relative;
+  width: 239px;
+  height: 34px;
+  left: 155px;
+  top: 70px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 17px;
-text-align: left;
-margin-bottom: -10px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: left;
+  margin-bottom: -10px;
 
-color: #ADADAD;
+  color: #ADADAD;
 }
 
 
 
-.isFavorite{
+.isFavorite {
   position: relative;
-width: 25px;
-height: 25px;
-left: 190px;
-top: 0px;
-margin-bottom: -10px;
+  width: 25px;
+  height: 25px;
+  left: 190px;
+  top: 0px;
+  margin-bottom: -10px;
 
 
 }
@@ -197,4 +198,43 @@ margin-bottom: -10px;
   height: 30px;
   border-left: 2px solid #dfe1e5;
   margin-right: 10px;
+}
+
+.SearchResult {
+  margin-top: 20px;
+  /* 필요한 만큼의 여백 추가 */
+  font-size: 18px;
+  /* 원하는 폰트 크기 설정 */
+}
+
+.cafes-result {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+  /* 수정된 부분 */
+}
+
+.cafe-result {
+  margin-bottom: 20px;
+  /* 수정된 부분 */
+  margin-top: 20px;
+  flex: 0 0 calc(33.3333% - 20px);
+  box-sizing: border-box;
+  padding: 0 10px;
+  /* 추가된 부분 */
+}
+
+.last-cafe-result {
+  margin-bottom: 20px;
+}
+
+.last-grayLine {
+  position: relative;
+  width: 420px;
+  height: 0px;
+  left: 30px;
+  top: 150px;
+  margin-top: -50px;
+  border: 1px solid #d7d7d7;
+  margin-bottom: 90px;
 }

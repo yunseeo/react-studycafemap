@@ -34,7 +34,7 @@ function App() {
   return (
     <div id="app" className="App">
       <h1 className="Logo">{Logo}</h1>
-      <SearchBar />
+      <SearchBar cafes={cafes.data} onSearch={(searchText) => console.log('Searched:', searchText)} />
       <div className="whatAboutThisCafe">{recommend}</div>
 
       {/* <CafeItem test={"aaaaa"}></CafeItem> */}
