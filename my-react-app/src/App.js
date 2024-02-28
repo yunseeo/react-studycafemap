@@ -23,10 +23,13 @@ function App() {
         if (item.name === name) {
           return { ...item, favorite: !item.favorite };
         }
-
         return item;
       });
     });
+  };
+
+  const handleFavoriteChange = (name) => {
+    changeFavorite(name);
   };
 
   console.log(list);
@@ -34,10 +37,9 @@ function App() {
   return (
     <div id="app" className="App">
       <h1 className="Logo">{Logo}</h1>
-      <SearchBar cafes={cafes.data} onSearch={(searchText) => console.log('Searched:', searchText)} />
+      <SearchBar cafes={cafes.data} onSearch={(searchText) => console.log('Searched:', searchText)} onFavoriteChange={handleFavoriteChange}/>
       <div className="whatAboutThisCafe">{recommend}</div>
 
-      {/* <CafeItem test={"aaaaa"}></CafeItem> */}
       {cafes.data.map((cafe, index) => (
         <div key={index}>
           <div className="grayLine"></div>
@@ -50,14 +52,14 @@ function App() {
               className="isFavorite"
               src="img/like.png"
               style={{ cursor: "pointer" }}
-              onClick={() => changeFavorite(cafe.name)}
+              onClick={() => handleFavoriteChange(cafe.name)}
             />
           ) : (
             <img
               className="isFavorite"
               src="img/dislike.png"
               style={{ cursor: "pointer" }}
-              onClick={() => changeFavorite(cafe.name)}
+              onClick={() => handleFavoriteChange(cafe.name)}
             />
           )}
         </div>
@@ -70,85 +72,3 @@ function App() {
 
 export default App;
 
-/*
-App.js
-import React, { useState } from 'react';
-import CafeList from './CafeList';
-import './App.css';
-
-function App() {
-  const [cafes, setCafes] = useState([
-    { id: 1, name: '스타벅스 경희대학교국제캠퍼스', price: '4,900', walkingTime: '12', hasOutlet: '많음', crowded: '많음', vibe: '시끄러운', isFavorite: false },
-    { id: 2, name: '카페칸나', price: '5,000', walkingTime: '12', hasOutlet: '많음', crowded: '보통', vibe: '조용한', isFavorite: false },
-    { id: 3, name: '스타벅스 경희대학교국제캠퍼스', price: '4,900', walkingTime: '도보 약 12', hasOutlet: '많음', crowded: '많음', vibe: '시끄러운', isFavorite: false }
-  ]);
-
-  const toggleFavorite = (id) => {
-    const updatedCafes = cafes.map(cafe => {
-      if (cafe.id === id) {
-        return { ...cafe, isFavorite: !cafe.isFavorite };
-      }
-      return cafe;
-    });
-    setCafes(updatedCafes);
-  };
-
-  return (
-    <div className="App">
-      <header>
-        <h1>LOGO</h1>
-      </header>
-      <main>
-        <h3>이런 카페는 어떠세요?</h3>
-        <CafeList cafes={cafes} onToggleFavorite={toggleFavorite} />
-      </main>
-    </div>
-  );
-}
-
-export default App;
-*/
-
-/*
-import React from 'react';
-import './CafeList.css';
-
-const CafeList = ({ cafes, onToggleFavorite }) => {
-  return (
-    <div>
-      {cafes.map(cafe => (
-        <div key={cafe.id} className="cafe">
-          <h3>{cafe.name}</h3>
-          <div className="favorite-btn">
-            <button className={`star-btn ${cafe.isFavorite ? 'active' : ''}`} onClick={() => onToggleFavorite(cafe.id)}>
-              {cafe.isFavorite ? 'Remove from Favorites' : 'Add to Favorites'}
-            </button>
-          </div>
-          <p>아메리카노 <b>{cafe.price}</b>원</p>
-          <p>도보 약 {cafe.walkingTime}분, 콘센트 {cafe.hasOutlet}, 이용 고객 {cafe.crowded}, {cafe.vibe} 분위기</p>
-        </div>
-      ))}
-    </div>
-  );
-};
-
-export default CafeList
-*/
-
-/*
-import './App.css';
-import Logo from './component/logo';
-import SearchBar from './component/SearchBar';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Logo />
-        <SearchBar />
-      </header>
-    </div>
-  );
-}
-
-export default App;*/

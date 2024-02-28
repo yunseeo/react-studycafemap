@@ -10,7 +10,7 @@ body {
 
 #app {
   max-width: 480px;
-  min-height: 120vh;
+  min-height: 200vh;
   margin: auto;
   background-color: white;
   display: flex;
@@ -36,7 +36,6 @@ body {
 }
 
 .whatAboutThisCafe {
-  /* 이런 카페는 어떠세요? */
   position: relative;
   white-space: nowrap;
   height: 22px;
@@ -48,46 +47,34 @@ body {
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
-  /* identical to box height */
 
   color: #000000;
   text-align: left;
-  /* 왼쪽 정렬 추가 */
   width: 100%;
 }
 
 .grayLine {
-  /* underline */
-
   position: relative;
   width: 420px;
   height: 0px;
   left: 30px;
   top: 150px;
   margin-top: -50px;
-
   border: 1px solid #d7d7d7;
-
-
-
 }
 
 .picture {
-  /* cafe image */
   position: relative;
   width: 100px;
   height: 100px;
   left: -150px;
   top: 160px;
   margin-bottom: -10px;
-
-  /* background: url(image.png); */
   border-radius: 6px;
 
 }
 
 .cafeName {
-  /* 스타벅스 경희대학교국제캠... */
   white-space: nowrap;
   text-align: left;
   position: relative;
@@ -103,13 +90,9 @@ body {
   line-height: 19px;
 
   color: #000000;
-
-
 }
 
 .americanoCost {
-  /* 아메리카노 4,900원 */
-
   position: relative;
   text-align: left;
   width: 122px;
@@ -122,17 +105,11 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 17px;
-  /* identical to box height */
 
   color: #000000;
-
-
-
 }
 
 .characteristic {
-  /* 도보 약 12분, 콘센트 많음, 이용 고객 많음, 시끄러운 분위기 */
-
   position: relative;
   width: 239px;
   height: 34px;
@@ -159,8 +136,6 @@ body {
   left: 190px;
   top: 0px;
   margin-bottom: -10px;
-
-
 }
 
 .search-bar-container {
@@ -200,28 +175,16 @@ body {
   margin-right: 10px;
 }
 
-.SearchResult {
-  margin-top: 20px;
-  /* 필요한 만큼의 여백 추가 */
-  font-size: 18px;
-  /* 원하는 폰트 크기 설정 */
-}
-
 .cafes-result {
-  display: flex;
   flex-wrap: wrap;
   margin: 0 -10px;
-  /* 수정된 부분 */
 }
 
 .cafe-result {
   margin-bottom: 20px;
-  /* 수정된 부분 */
-  margin-top: 20px;
   flex: 0 0 calc(33.3333% - 20px);
   box-sizing: border-box;
   padding: 0 10px;
-  /* 추가된 부분 */
 }
 
 .last-cafe-result {
@@ -234,7 +197,52 @@ body {
   height: 0px;
   left: 30px;
   top: 150px;
-  margin-top: -50px;
+  margin-top: -60px;
   border: 1px solid #d7d7d7;
   margin-bottom: 90px;
+}
+
+.no-result {
+  text-align: center;
+  padding: 20px; 
+  margin-top: 20px;
+  font-size: 16px;
+  color: #555;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.SearchResult {
+  margin-top: 20px; 
+  text-align: left;
+  margin-left: 60px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.gray-Line {
+  margin-top: 10px;
+  width: 420px;
+  height: 0px;
+  margin-left: 40px;
+  border: 1px solid #d7d7d7;
+}
+
+.NoSearchResult {
+  margin-top: 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.gray_Line {
+  position: relative;
+  width: 420px;
+  height: 0px;
+  left: 30px;
+  top: 150px;
+  margin-top: -60px;
+  border: 1px solid #d7d7d7;
 }
